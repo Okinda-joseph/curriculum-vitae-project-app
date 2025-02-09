@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum-vitae-app</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #header {
+            background: linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 0.4)),url(./image/img.jpg);
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            width: 100% !important;
+            min-height: 100vh !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        #myH1 {
+            font-size: 3rem !important;
+            color: #ffff;
+            font-weight: 700 !important;
+            text-transform: capitalize !important;
+            max-width: 1000px !important;
+            width: 100%;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-bottom: 40px;
+        }
+        #myH1:hover {
+            color: #ff4141 !important;
+            transform: scaleX(1.1);
+        }
+       
+        .body .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .body .row p {
+            padding: 10px 0px;
+            font-size: 1.5rem !important;
+            color: #171717;
+        }
+        .label {
+            font-weight: 600;
+            margin-right: 5px;
+            text-transform: capitalize;
+        }
+        .hero-name {
+            color: #ffc0cb !important;
+        }
+
+        .email a {
+            color: #0077ff !important;
+            text-decoration: underline;
+        }
+
+        .hyperlink{
+            color: #ffff !important;
+            transition: 0.5s;
+        }
+        .hyperlink:hover {
+            color: #ffc0cb !important;
+        }
+
+        .label.hero {
+            padding: 10px 0px;
+            font-size: 1.5rem !important;
+            color: #171717;
+        }
+        button {
+            width: 200px !important;
+            height: 57px !important;
+            border: 2px solid #242424;
+            cursor: pointer;
+            outline: none;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            transition: 0.5s ease;
+        }
+        button:hover {
+            background-color: #ff4141 !important;
+            border: none;
+        }
+        button a{
+            color: #242424 !important;
+            font-size: 1rem !important;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        button a:hover {
+            color: #ffff !important;
+        }
+
+        /* SMALL SCREEN MEDIA ONLY */
+
+       
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="title-wrap">
+                    <h1 id="myH1"></h1>
+                    <div class="mybtn">
+                        <label class="label hero">Click to download:</label>
+                        <button><a href="/Curriculum Vitae (CV).pdf" download="Curriculum-vitae-app">Curriculum-vitae (CV)</a></button>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="row">
+                        <p class="label">Name:</p>
+                        <p class="hero-name">Were joseph okinda</p>
+                    </div>
+                    <div class="row">
+                        <p class="label">Email:</p>
+                        <p class="email"><a href="mailto:okindajoseph76@gmail.com">okindajoseph76@gmail.com</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="label">website demo:</p>
+                        <p><a class="hyperlink" href="https://okinda-joseph.github.io/devnexus-portfolio/">https://okinda-joseph.github.io/devnexus-portfolio/</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let myH1 = document.getElementById("myH1");
+        myH1.textContent = "DevNexus Tec hero website app";
+    </script>
+</body>
+</html>
